@@ -1,0 +1,8 @@
+.modbox {
+    display: flex;
+    justify-content: space-between;
+}
+.succes {
+    margin: 0 auto;
+    color: green;
+}
