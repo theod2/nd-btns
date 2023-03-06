@@ -6,3 +6,17 @@
     margin: 0 auto;
     color: green;
 }
+
+/*remove some usless elements*/
+div[data-testid="add_answer_reminder"] {
+    display: none !important;
+}
+div[data-testid="answering_feed"] {
+    display: none !important;
+}
+.sg-flex.sg-flex--margin-top-m.sg-flex--margin-right-m.sg-flex--margin-bottom-l.sg-flex--margin-left-m {
+    display: none !important;
+}
+.brn-challenge-confetti {
+    display: none !important;
+}
