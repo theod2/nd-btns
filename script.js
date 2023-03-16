@@ -40,7 +40,7 @@ function addAnswerbtns(){
         answer_id=answers[i].id.split("-")[1];
         let div = document.createElement('div');
         div.className = "modbox sg-box sg-box--white sg-box--border-color-gray-20 sg-box--no-shadow sg-box--border-radius sg-box--border sg-box--padding-m sg-box--padding-m-border md:sg-box--padding-m-border lg:sg-box--padding-m-border xl:sg-box--padding-m-border sg-box--border-color-gray-20 md:sg-box--border-color-gray-20 lg:sg-box--border-color-gray-20 xl:sg-box--border-color-gray-20";
-        div.innerHTML = '<img src=".https://raw.githubusercontent.com/theodrf/nd-btns/main/icons/shield-black.svg" style="width: 25px;">';
+        div.innerHTML = '<img src="https://raw.githubusercontent.com/theodrf/nd-btns/main/icons/shield-black.svg" style="width: 25px;">';
         answer_box.insertAdjacentElement("beforebegin", div);
         const keys = Object.keys(a_reasons);
         keys.forEach(key => {
