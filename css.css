@@ -1,4 +1,4 @@
-.modbox {
+.nd-btns-div {
     display: flex;
     justify-content: space-between;
 }
@@ -6,7 +6,10 @@
     margin: 0 auto;
     color: green;
 }
-
+.nd-btns {
+    background-color: red !important;
+    margin-right: 5px;
+}
 /*remove some usless elements*/
 div[data-testid="add_answer_reminder"] {
     display: none !important;

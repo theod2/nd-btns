@@ -1,0 +1,9 @@
+.col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+      
+.col1, .col2 {
+    padding: 10px;
+}

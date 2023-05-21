@@ -1,27 +1,30 @@
 {
-  "name": "nosdevoirs",
-  "description": "nosdevoirs",
+  "name": "nd-btns",
+  "description": "Extension that adds quick delete buttons on the question page and remove some useless elements in order to moderate more quickly",
   "version": "0.1.0",
   "manifest_version": 3,
+  "author":"Théo",
+  "options_page":"settings.html",
   "icons": {
       "128": "/icons/brainly.png"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "settings.html"
+  },
   "permissions": [
-      "activeTab",
-      "scripting",
-      "tabs"
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
   ],
   "content_scripts": [
     {
       "matches": ["https://nosdevoirs.fr/*"],
       "js": ["script.js"],
       "css": ["css.css"]
-    }],
-
-  "host_permissions": [
-      "https://nosdevoirs.fr/*"
+    }
   ]
 }
-
-
-
