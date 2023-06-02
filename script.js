@@ -48,13 +48,13 @@ function addAnswerbtns(){
         let div = document.createElement('div');
         answer_box.insertBefore(div, answer_box.children[1]);
         div.className="nd-btns-div";
-        (function(k){
+        (function(id){
             chrome.runtime.sendMessage({ action: "getData", keys:['answer'] }, function(response) {
                 const keys = Object.keys(response.data.answer);
                 keys.forEach(key => {
                     if(response.data.answer[key].active){
                         let btn = document.createElement("BUTTON");
-                        btn.id=answer_id;
+                        btn.id=id;
                         btn.className= "sg-button sg-button--s sg-button--solid nd-btns";
                         let t = document.createTextNode(decodeURIComponent(response.data.answer[key].tag));
                         btn.appendChild(t);
@@ -65,7 +65,7 @@ function addAnswerbtns(){
                     }
                 })
             });
-        })(i);
+        })(answer_id);
     }
 }
 
